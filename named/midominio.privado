@@ -1,0 +1,12 @@
+$TTL 86400
+@       IN      SOA     ns.midominio.privado.        mail.midominio.privado. (
+                        200403031
+                        28800
+                        7200
+                        604800
+                        86400 )
+                NS      ns.midominio.privado.
+                MX      10 mail.midominio.privado.
+ns      A       192.168.123.1
+mail    A       192.168.123.2
+www     CNAME   ns
