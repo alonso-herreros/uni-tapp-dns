@@ -33,7 +33,7 @@ Usando el programa dig responda a las siguientes preguntas y diga cómo ha obten
 ### 6. Determine el nombre y dirección IP del servidor de correo del administrador al que se refiere la pregunta anterior.
 ### 7. ¿Cuánto tiempo almacenará en caché la dirección IP de www.vanguardia.es? Pregunte varias veces al DNS por esta dirección. ¿Qué observa en el TTL del registro de recurso?
 ### 8. Pregunte ahora lo mismo a un servidor raíz (por ejemplo, J.ROOT-SERVERS.NET con dirección IP 192.58.128.30) y compruebe en el paquete de respuesta que, dicho servidor no acepta el modo recursivo.
-### 9. Averigüe cuántas máquinas están realizando balanceo de carga en el servidor web www.google.com. ¿Obtiene siempre las mismas y en el mismo orden?
+### 9. Averigüe cuántas máquinas están realizando balanceo de carga en el servidor web www.elpais.es. ¿Obtiene siempre las mismas y en el mismo orden?
 ### 10. Haciendo consultas iterativas, averigüe la dirección IP de www.pcreview.co.uk. ¿Qué pasos ha dado? Siguiendo los mismos pasos (consultas iterativas) ¿Se obtiene la dirección IP de www.bbc.co.uk?
 > Nota: si el servidor DNS tiene el registro en la cache, es posible que no responda con el siguiente paso y devuelva directamente el resultado. En ese caso, comienza preguntando directamente a un servidor raíz, por ejemplo, @A.ROOT-SERVERS.NET.
 
@@ -58,7 +58,7 @@ Este fichero named.conf se divide en dos partes:
 * En el apartado de opciones (options) se configuran cosas como el puerto en el que va a escuchar (al arrancarlo en modo usuario no podrá ser el 53, necesitaremos especificar un puerto no reservado como por ejemplo el 10053) y la localización de ciertos ficheros que va a tener que escribir durante su funcionamiento (que pondremos para que estén en nuestra cuenta).
 * En el apartado de zonas (zone) se define una o más zonas DNS que sirve este servidor.
 
-Un ejemplo de fichero de configuración sería el siguiente (estamos **suponiendo que hace la práctica en un subdirectorio rroo/named de su cuenta**; sustituya $HOME por el camino completo de su HOME). Que puede averiguarlo usando `echo $HOME`:
+Un **ejemplo** de fichero de configuración sería el siguiente (estamos **suponiendo que hace la práctica en un subdirectorio rroo/named de su cuenta**; sustituya $HOME por el camino completo de su HOME). Que puede averiguarlo usando `echo $HOME`:
 
 ```
 # file $HOME/rroo/named/named.conf
@@ -105,5 +105,8 @@ ns              A           192.168.123.1
 mail            A           192.168.123.2
 www             CNAME       ns
 ```
-### 1. Copie estos ficheros, arranque un named en su máquina y compruebe con la herramienta dig que está funcionando correctamente.
+### 1. Copie estos ficheros (puede clonarlos de este repositorio), arranque un named en su máquina y compruebe con la herramienta dig que está funcionando correctamente.
+```
+ git -c http.sslVerify=false clone https://gitlab.pervasive.it.uc3m.es/aptel/dns.git
+ ```
 ### 2. Pare el servidor named y modifique los ficheros de configuración para que sirva también el dominio necesario para la resolución inversa.
