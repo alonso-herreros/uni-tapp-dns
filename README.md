@@ -36,11 +36,10 @@ Usando el programa dig responda a las siguientes preguntas y diga cómo ha obten
 ### 9. Averigüe cuántas máquinas están realizando balanceo de carga en el servidor web www.google.com. ¿Obtiene siempre las mismas y en el mismo orden?
 ### 10. Haciendo consultas iterativas, averigüe la dirección IP de www.pcreview.co.uk. ¿Qué pasos ha dado? Siguiendo los mismos pasos (consultas iterativas) ¿Se obtiene la dirección IP de www.bbc.co.uk?
 > Nota: si el servidor DNS tiene el registro en la cache, es posible que no responda con el siguiente paso y devuelva directamente el resultado. En ese caso, comienza preguntando directamente a un servidor raíz, por ejemplo, @A.ROOT-SERVERS.NET.
-### 11. Puede hacer esto mismo (punto anterior) con la opción +trace de dig. Compruebe el resultado
-que obtiene.
-### 12. Utilizando la información disponible a través del DNS determine (nombre y dirección IP) la
-máquina o máquinas que actúan como servidoras de correo del dominio gmail.com.
-###13. ¿Cómo haría para obtener todos los registros de recurso de la zona lab.it.uc3m.es?
+
+### 11. Puede hacer esto mismo (punto anterior) con la opción +trace de dig. Compruebe el resultado que obtiene.
+### 12. Utilizando la información disponible a través del DNS determine (nombre y dirección IP) la máquina o máquinas que actúan como servidoras de correo del dominio gmail.com.
+### 13. ¿Cómo haría para obtener todos los registros de recurso de la zona lab.it.uc3m.es?
 
 ## Parte 2:  Creación de un dominio en un servidor DNS named
 
