@@ -39,7 +39,7 @@ Usando el programa dig responda a las siguientes preguntas y diga cómo ha obten
 
 ### 11. Puede hacer esto mismo (punto anterior) con la opción +trace de dig. Compruebe el resultado que obtiene.
 ### 12. Utilizando la información disponible a través del DNS determine (nombre y dirección IP) la máquina o máquinas que actúan como servidoras de correo del dominio gmail.com.
-### 13. ¿Cómo haría para obtener todos los registros de recurso de la zona lab.it.uc3m.es?
+
 
 ## Parte 2:  Creación de un dominio en un servidor DNS named
 
@@ -110,3 +110,5 @@ www             CNAME       ns
  git -c http.sslVerify=false clone https://gitlab.pervasive.it.uc3m.es/aptel/dns.git
  ```
 ### 2. Pare el servidor named y modifique los ficheros de configuración para que sirva también el dominio necesario para la resolución inversa.
+
+### 3. ¿Cómo haría para obtener todos los registros de recurso de la zona midominio.privado?
