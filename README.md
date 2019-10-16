@@ -111,4 +111,4 @@ www             CNAME       ns
  ```
 ### 2. Pare el servidor named y modifique los ficheros de configuración para que sirva también el dominio necesario para la resolución inversa.
 
-### 3. ¿Cómo haría para obtener todos los registros de recurso de la zona midominio.privado?
+### 3. ¿Cómo haría para obtener todos los registros de recurso de la zona midominio.privado? ¿Y del dominio lab.it.uc3m.es?
