@@ -1,4 +1,4 @@
-[English version] (https://gitlab.pervasive.it.uc3m.es/aptel/dns/blob/master/README_EN.md)
+[English version](README_EN.md)
 
 # Práctica de DNS
 
@@ -107,6 +107,6 @@ www             CNAME       ns
 ```
 ### 1. Copie estos ficheros (puede clonarlos de este repositorio), arranque un named en su máquina y compruebe con la herramienta dig que está funcionando correctamente.
 ```
- git -c http.sslVerify=false clone https://gitlab.pervasive.it.uc3m.es/aptel/dns.git
+ git clone https://gitlab.gast.it.uc3m.es/aptel/dns.git
  ```
 ### 2. Pare el servidor named y modifique los ficheros de configuración para que sirva también el dominio necesario para la resolución inversa.
