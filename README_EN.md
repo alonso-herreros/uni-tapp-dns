@@ -137,6 +137,6 @@ www             CNAME       ns
 ```
 ### 1. Copy the above files, start a named on your computer and use the dig tool to check that it is working properly. Use the following to retrieve all the files:
 ```
- git -c http.sslVerify=false clone https://gitlab.pervasive.it.uc3m.es/aptel/dns.git
+ git -c http.sslVerify=false clone https://gitlab.gast.it.uc3m.es/aptel/dns.git
 ```
 ### 2. Stop the named server and modify the configuration files so that it also serves the domain necessary for inverse resolution. 
