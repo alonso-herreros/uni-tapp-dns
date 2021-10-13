@@ -28,7 +28,7 @@ Usando el programa dig responda a las siguientes preguntas y diga cómo ha obten
 ### 1. Determine la dirección IP de la máquina www.mec.es.
 ### 2. Averigüe qué máquina tiene asignada la dirección IP 193.110.128.199.
 ### 3. Con relación al dominio abc.es, averigüe el nombre y dirección IP de los servidores de DNS de dicho dominio, y diga cuál es el primario y cuáles los secundarios.
-### 4. Obtenga el registro SOA del dominio abc.es preguntándoselo al servidor DNS del laboratorio en la que está haciendo la práctica, y preguntándoselo directamente al servidor primario del dominio abc.es. Compruebe que en un caso es información autorizada y en otro no.
+### 4. Obtenga el registro SOA del dominio `abc.es` preguntándoselo al servidor DNS del laboratorio en la que está haciendo la práctica, y preguntándoselo directamente al servidor primario del dominio `abc.es`. Compruebe que en un caso es información autorizada y en otro no.
 ### 5. Si tuviera un problema con el DNS de abc.es y tuviera que mandar un correo electrónico a su administrador, ¿A qué dirección de e-mail lo enviaría?
 ### 6. Determine el nombre y dirección IP del servidor de correo del administrador al que se refiere la pregunta anterior.
 ### 7. ¿Cuánto tiempo almacenará en caché (TTL original) la dirección IP de www.vanguardia.es? Pregunte varias veces al DNS por esta dirección. ¿Qué observa en el TTL del registro de recurso?
@@ -37,9 +37,9 @@ Usando el programa dig responda a las siguientes preguntas y diga cómo ha obten
 ### 10. Haciendo consultas iterativas, averigüe la dirección IP de www.pcreview.co.uk. ¿Qué pasos ha dado? Siguiendo los mismos pasos (consultas iterativas) ¿Se obtiene la dirección IP de www.bbc.co.uk?
 > Nota: si el servidor DNS tiene el registro en la cache, es posible que no responda con el siguiente paso y devuelva directamente el resultado. En ese caso, comienza preguntando directamente a un servidor raíz, por ejemplo, @A.ROOT-SERVERS.NET.
 
-### 11. Puede hacer esto mismo (punto anterior) con la opción +trace de dig. Compruebe el resultado que obtiene.
-### 12. Utilizando la información disponible a través del DNS determine (nombre y dirección IP) la máquina o máquinas que actúan como servidoras de correo del dominio gmail.com.
-### 13. ¿Cómo haría para obtener todos los registros de recurso de la zona lab.it.uc3m.es?
+### 11. Puede hacer esto mismo (punto anterior) con la opción `+trace` de dig. Compruebe el resultado que obtiene.
+### 12. Utilizando la información disponible a través del DNS determine (nombre y dirección IP) la máquina o máquinas que actúan como servidoras de correo del dominio `gmail.com`.
+### 13. ¿Cómo haría para obtener todos los registros de recurso de la zona `lab.it.uc3m.es`?
 
 ## Parte 2:  Creación de un dominio en un servidor DNS named
 
