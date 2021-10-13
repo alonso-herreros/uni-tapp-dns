@@ -31,7 +31,7 @@ Usando el programa dig responda a las siguientes preguntas y diga cómo ha obten
 ### 4. Obtenga el registro SOA del dominio abc.es preguntándoselo al servidor DNS del laboratorio en la que está haciendo la práctica, y preguntándoselo directamente al servidor primario del dominio abc.es. Compruebe que en un caso es información autorizada y en otro no.
 ### 5. Si tuviera un problema con el DNS de abc.es y tuviera que mandar un correo electrónico a su administrador, ¿A qué dirección de e-mail lo enviaría?
 ### 6. Determine el nombre y dirección IP del servidor de correo del administrador al que se refiere la pregunta anterior.
-### 7. ¿Cuánto tiempo almacenará en caché la dirección IP de www.vanguardia.es? Pregunte varias veces al DNS por esta dirección. ¿Qué observa en el TTL del registro de recurso?
+### 7. ¿Cuánto tiempo almacenará en caché (TTL original) la dirección IP de www.vanguardia.es? Pregunte varias veces al DNS por esta dirección ¿Qué observa en el TTL del registro de recurso?
 ### 8. Pregunte ahora lo mismo a un servidor raíz (por ejemplo, J.ROOT-SERVERS.NET con dirección IP 192.58.128.30) y compruebe en el paquete de respuesta que, dicho servidor no acepta el modo recursivo.
 ### 9. Averigüe cuántas máquinas están realizando balanceo de carga en el servidor web www.elpais.es. ¿Obtiene siempre las mismas y en el mismo orden?
 ### 10. Haciendo consultas iterativas, averigüe la dirección IP de www.pcreview.co.uk. ¿Qué pasos ha dado? Siguiendo los mismos pasos (consultas iterativas) ¿Se obtiene la dirección IP de www.bbc.co.uk?
