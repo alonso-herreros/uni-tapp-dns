@@ -44,7 +44,7 @@ Usando el programa dig responda a las siguientes preguntas y diga cómo ha obten
 ### 12. Utilizando la información disponible a través del DNS determine (nombre y dirección IP) la máquina o máquinas que actúan como servidoras de correo del dominio `gmail.com`.
 ### 13. ¿Cómo haría para obtener todos los registros de recurso de la zona `lab.it.uc3m.es`?
 
-### 14. Averigua cuáles de los siguientes nombres de domino son una zona: `google.jobs`, `primevideo.com`, `inf.uc3m.es`, `it.uc3m.es`.
+### 14. Averigua cuáles de los siguientes nombres de dominio son una zona: `google.jobs`, `primevideo.com`, `inf.uc3m.es`, `it.uc3m.es`.
 
 ### 15. Identifica los servidores DNS, servidores de correo, la dirección del administrador del dominio, e identifica los tiempos de copia secundario-primario, tiempo de expiración, así como TTL mínimo de los dominios `it.uc3m.es` y `csic.es`. 
 
