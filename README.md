@@ -46,12 +46,7 @@ Usando el programa dig responda a las siguientes preguntas y diga cómo ha obten
 
 ### 14. Averigua cuáles de los siguientes nombres de domino son una zona: `google.jobs`, `primevideo.com`, `inf.uc3m.es`, `it.uc3m.es`.
 
-### 15. Identifica los servidores DNS, de correo, la dirección del administrador del dominio, e identifica los tiempos de copia secundario-primario, tiempo de expiración, así como TTL mínimo de los dominios. 
-Dibuja un árbol con los registros como vimos en clase con el dominio it.uc3m.es que aparece en la figura [arboldns.png](arboldns.png)):
-
-| ----------- | ----------- |
-| 2.1) csic.es    | 2.1)  ucm.es |
-| 2.2) akamai.com | 2.2) cloudfare.com |
+### 15. Identifica los servidores DNS, servidores de correo, la dirección del administrador del dominio, e identifica los tiempos de copia secundario-primario, tiempo de expiración, así como TTL mínimo de los dominios `it.uc3m.es` y `csic.es`. 
 
 
 ## Parte 2:  Creación de un dominio en un servidor DNS named
