@@ -35,7 +35,7 @@ Remember the format of a resource record (RR) in DNS is the following:
 
 ### 3. Find out the name and IP address of the DNS servers of the domain `abc.es` and say which of them is primary and which is secondary. 
 
-### 4. Obtain the SOA registry of the domain `abc.es`, first, by asking the local DNS and, second, by asking the primary server of the abc.es domain. Verify that in one case, the response is authoritative and in the other, it isn't. 
+### 4. Obtain the SOA registry of the domain `abc.es`, first, by asking the local DNS and, second, by asking the primary server of the `abc.es` domain. Verify that in one case, the response is authoritative and in the other, it isn't. 
 
 ### 5. If you had a problem with the DNS of `abc.es` and you had to send an e-mail to its administrator, to what address would you send it? 
 
