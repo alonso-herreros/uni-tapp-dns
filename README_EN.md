@@ -29,36 +29,36 @@ Remember the format of a resource record (RR) in DNS is the following:
 <domain name> <TTL> IN <record type> <value> 
 ```
 
-### 1. Determine the IP address of the machine www.mec.es. 
+### 1. Determine the IP address of the machine `www.mec.es`. 
 
-### 2. Check which machine has the IP address 193.110.128.199. 
+### 2. Check which machine has the IP address `193.110.128.199`. 
 
-### 3. Find out the name and IP address of the DNS servers of the domain abc.es and say which of them is primary and which is secondary. 
+### 3. Find out the name and IP address of the DNS servers of the domain `abc.es` and say which of them is primary and which is secondary. 
 
-### 4. Obtain the SOA registry of the domain abc.es, first, by asking the local DNS and, second, by asking the primary server of the abc.es domain. Verify that in one case, the response is authoritative and in the other, it isn't. 
+### 4. Obtain the SOA registry of the domain `abc.es`, first, by asking the local DNS and, second, by asking the primary server of the abc.es domain. Verify that in one case, the response is authoritative and in the other, it isn't. 
 
-### 5. If you had a problem with the DNS of abc.es and you had to send an e-mail to its administrator, to what address would you send it? 
+### 5. If you had a problem with the DNS of `abc.es` and you had to send an e-mail to its administrator, to what address would you send it? 
 
 ### 6. Determine the name and IP address of the mail server of the administrator referred to in the previous question
 
-### 7. How long will the IP address of www.vanguardia.es remain in the cache of your local DNS? Ask your local DNS for this address several times in succession. What do you observe in the TTL of the resource registry? 
+### 7. How long will the IP address of `www.vanguardia.es` remain in the cache of your local DNS? Ask your local DNS for this address several times in succession. What do you observe in the TTL of the resource registry? 
 
-### 8. Now ask the same to a root server (for example, J.ROOT-SERVERS.NET with IP address 192.58.128.30) and check in the reply packet that this server does not accept the recursive mode. 
+### 8. Now ask the same to a root server (for example, `J.ROOT-SERVERS.NET` with IP address `192.58.128.30`) and check in the reply packet that this server does not accept the recursive mode. 
 
-### 9. Find out how many computers are carrying out load balancing in the web server www.elpais.es. Do you always get the same ones in the same order? 
+### 9. Find out how many computers are carrying out load balancing in the web server `www.elpais.es`. Do you always get the same ones in the same order? 
 
-### 10. By making iterative queries, check the IP address of www.pcreview.co.uk. What are the steps you have taken? 
+### 10. By making iterative queries, check the IP address of `www.pcreview.co.uk`. What are the steps you have taken? 
 
 > Hint: if your DNS server has this record in the cache it is possible it does not answer with the next step but with the results. In that case, ask directly to a root server in this way: `dig +norecurse www.pcreview.co.uk @A.ROOT-SERVERS.NET`, and continue. 
 
-Following the same steps (iterative queries), do you obtain the IP address of www.bbc.co.uk? 
+Following the same steps (iterative queries), do you obtain the IP address of `www.bbc.co.uk`? 
 
 
 ### 11. The same can be done with the +trace option of dig. Check the result of doing so. 
 
-### 12. Using the information available via DNS determine the computer or computers (name and IP address) that act as mail servers for the domain gmail.com
+### 12. Using the information available via DNS determine the computer or computers (name and IP address) that act as mail servers for the domain `gmail.com`.
 
-### 13. What would you need to do to obtain all the resource registries of the the zone lab.it.uc3m.es? 
+### 13. What would you need to do to obtain all the resource registries of the the zone `lab.it.uc3m.es`? 
 
 ## Part 2: Creating a domain in a named DNS server 
 
