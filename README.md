@@ -38,7 +38,7 @@ Usando el programa dig responda a las siguientes preguntas y diga cómo ha obten
 
 > Nota: si el servidor DNS tiene el registro en la cache, es posible que no responda con el siguiente paso y devuelva directamente el resultado. En ese caso, comienza preguntando directamente a un servidor raíz, por ejemplo, `dig +norecurse www.pcreview.co.uk @A.ROOT-SERVERS.NET`, y continua.
 
-Siguiendo los mismos pasos (consultas iterativas) ¿Se obtiene la dirección IP de `www.bbc.co.uk`?
+### Siguiendo los mismos pasos (consultas iterativas) ¿Se obtiene la dirección IP de `www.bbc.co.uk`?
 
 ### 11. Puede hacer esto mismo (punto anterior) con la opción `+trace` de dig. Compruebe el resultado que obtiene.
 ### 12. Utilizando la información disponible a través del DNS determine (nombre y dirección IP) la máquina o máquinas que actúan como servidoras de correo del dominio `gmail.com`.
