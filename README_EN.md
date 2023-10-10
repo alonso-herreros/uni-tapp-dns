@@ -60,6 +60,10 @@ Following the same steps (iterative queries), do you obtain the IP address of `w
 
 ### 13. What would you need to do to obtain all the resource registries of the the zone `lab.it.uc3m.es`? 
 
+### 14. Find out which of the following domain names are a zone: `google.jobs`, `primevideo.com`, `inf.uc3m.es`, `it.uc3m.es`.
+
+### 15. Identify the DNS servers, mail servers, the domain administrator's address, and identify the secondary-primary copy times, expiration time, as well as the minimum TTL for the domains `it.uc3m.es` and `csic.es`.
+
 ## Part 2: Creating a domain in a named DNS server 
 
 ### Configuring the named DNS server
