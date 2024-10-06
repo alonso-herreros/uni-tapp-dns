@@ -42,7 +42,7 @@ Usando el programa dig responda a las siguientes preguntas y diga cómo ha obten
 
 ### 11. Puede hacer esto mismo (punto anterior) con la opción `+trace` de dig. Compruebe el resultado que obtiene.
 ### 12. Utilizando la información disponible a través del DNS determine (nombre y dirección IP) la máquina o máquinas que actúan como servidoras de correo del dominio `gmail.com`.
-### 13. ¿Cómo haría para obtener todos los registros de recurso de la zona `lab.it.uc3m.es`?
+### 13. ¿Cómo haría para obtener todos los registros de recurso de la zona `lab.it.uc3m.es`? ¿A través de qué protocolo de transporte se hace la transferencia?
 
 ### 14. Averigua cuáles de los siguientes nombres de dominio son una zona: `google.jobs`, `primevideo.com`, `inf.uc3m.es`, `it.uc3m.es`.
 
