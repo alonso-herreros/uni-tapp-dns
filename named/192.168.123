@@ -1,0 +1,10 @@
+$TTL 86400
+@       IN      SOA     ns.midominio.privado.      mail.midominio.privado. (
+                200403031 ; Numero de Serie: Fecha+Numero
+                28800 ; Tiempo de Refresco
+                7200 ; Tiempo de Reintento
+                604080 ; Caducidad de la informacion
+                86400) ; TTL para clientes
+        NS      ns.midominio.privado.
+1       PTR     ns.midominio.privado.
+2       PTR     mail.midominio.privado.

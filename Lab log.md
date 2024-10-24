@@ -244,7 +244,36 @@ A symlink to the `named` executable in `/usr/dist/sbin` was created in
 
 ### 2.1. Start a `named` and check that it's running with dig
 
-
+With the changes mentioned above, it all worked
 
 ### 2.2. Modify `named` config to also server inverse resolution
+
+The following entry was added to the `named.conf` file (note that environment
+variable substitution is performed by the wrapper script)
+
+```named
+zone "123.168.192.in-addr.arpa" IN {
+  type master;
+  file "$NAMED_DIR/192.168.123";
+};
+```
+
+Then, in a new file `192.168.123` in the same `named` directory, the following
+content was added (mostly copied from the file `127.0.0`, except the last 2
+lines)
+
+```named
+$TTL 86400
+@       IN      SOA     ns.midominio.privado.      mail.midominio.privado. (
+                200403031 ; Numero de Serie: Fecha+Numero
+                28800 ; Tiempo de Refresco
+                7200 ; Tiempo de Reintento
+                604080 ; Caducidad de la informacion
+                86400) ; TTL para clientes
+        NS      ns.midominio.privado.
+1       PTR     ns.midominio.privado.
+2       PTR     mail.midominio.privado.
+```
+
+Essentially, everything worked fine.
 
