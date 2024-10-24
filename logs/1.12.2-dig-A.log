@@ -1,0 +1,22 @@
+[2024-10-24, 17:54:45] dig A gmail-smtp-in.l.google.com
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A gmail-smtp-in.l.google.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 21547
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: f9c769a99bbaeb1501000000671a6dc5abcfc6c091ab5f38 (good)
+;; QUESTION SECTION:
+;gmail-smtp-in.l.google.com.	IN	A
+
+;; ANSWER SECTION:
+gmail-smtp-in.l.google.com. 300	IN	A	74.125.133.27
+
+;; Query time: 48 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:54:45 CEST 2024
+;; MSG SIZE  rcvd: 99
+

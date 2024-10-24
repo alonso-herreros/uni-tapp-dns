@@ -1,0 +1,120 @@
+[2024-10-24, 17:38:46] dig A www.elpais.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.elpais.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 52666
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 9f5022db23a6d88701000000671a6a063c6e581e6d4a7c54 (good)
+;; QUESTION SECTION:
+;www.elpais.es.			IN	A
+
+;; ANSWER SECTION:
+www.elpais.es.		1930	IN	CNAME	lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com.
+lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com. 60 IN A 52.16.231.198
+lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com. 60 IN A 34.248.106.3
+
+;; Query time: 4 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:38:46 CEST 2024
+;; MSG SIZE  rcvd: 177
+
+[2024-10-24, 17:38:48] dig A www.elpais.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.elpais.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57169
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 1d2d6bb3f3b020b301000000671a6a08cc32de90febc71ef (good)
+;; QUESTION SECTION:
+;www.elpais.es.			IN	A
+
+;; ANSWER SECTION:
+www.elpais.es.		1928	IN	CNAME	lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com.
+lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com. 58 IN A 52.16.231.198
+lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com. 58 IN A 34.248.106.3
+
+;; Query time: 0 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:38:48 CEST 2024
+;; MSG SIZE  rcvd: 177
+
+[2024-10-24, 17:38:49] dig A www.elpais.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.elpais.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 42176
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 58f91218aff6ed7401000000671a6a091b6ce2a17abf76c2 (good)
+;; QUESTION SECTION:
+;www.elpais.es.			IN	A
+
+;; ANSWER SECTION:
+www.elpais.es.		1927	IN	CNAME	lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com.
+lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com. 57 IN A 52.16.231.198
+lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com. 57 IN A 34.248.106.3
+
+;; Query time: 0 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:38:49 CEST 2024
+;; MSG SIZE  rcvd: 177
+
+[2024-10-24, 17:38:51] dig A www.elpais.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.elpais.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 35891
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: b3fe89f93b37169a01000000671a6a0bf934fd7896693d23 (good)
+;; QUESTION SECTION:
+;www.elpais.es.			IN	A
+
+;; ANSWER SECTION:
+www.elpais.es.		1925	IN	CNAME	lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com.
+lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com. 55 IN A 52.16.231.198
+lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com. 55 IN A 34.248.106.3
+
+;; Query time: 0 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:38:51 CEST 2024
+;; MSG SIZE  rcvd: 177
+
+[2024-10-24, 17:38:52] dig A www.elpais.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.elpais.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 8173
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 91d7865e697f187301000000671a6a0cb2ca1225e7712997 (good)
+;; QUESTION SECTION:
+;www.elpais.es.			IN	A
+
+;; ANSWER SECTION:
+www.elpais.es.		1924	IN	CNAME	lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com.
+lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com. 54 IN A 34.248.106.3
+lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com. 54 IN A 52.16.231.198
+
+;; Query time: 0 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:38:52 CEST 2024
+;; MSG SIZE  rcvd: 177
+

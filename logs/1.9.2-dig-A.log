@@ -1,0 +1,24 @@
+[2024-10-24, 17:37:48] dig A www.elpais.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.elpais.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23216
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 3ca097e942faae2001000000671a69cc094d41bf28176a91 (good)
+;; QUESTION SECTION:
+;www.elpais.es.			IN	A
+
+;; ANSWER SECTION:
+www.elpais.es.		1988	IN	CNAME	lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com.
+lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com. 48 IN A 52.16.231.198
+lb-redireccionesweb-pro-407952733.eu-west-1.elb.amazonaws.com. 48 IN A 34.248.106.3
+
+;; Query time: 0 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:37:48 CEST 2024
+;; MSG SIZE  rcvd: 177
+

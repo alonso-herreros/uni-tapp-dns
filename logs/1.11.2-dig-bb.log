@@ -1,0 +1,46 @@
+[2024-10-24, 17:50:39] dig A www.bb.co.uk +trace
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.bb.co.uk +trace
+;; global options: +cmd
+.			340399	IN	NS	i.root-servers.net.
+.			340399	IN	NS	e.root-servers.net.
+.			340399	IN	NS	a.root-servers.net.
+.			340399	IN	NS	g.root-servers.net.
+.			340399	IN	NS	k.root-servers.net.
+.			340399	IN	NS	c.root-servers.net.
+.			340399	IN	NS	d.root-servers.net.
+.			340399	IN	NS	b.root-servers.net.
+.			340399	IN	NS	l.root-servers.net.
+.			340399	IN	NS	m.root-servers.net.
+.			340399	IN	NS	h.root-servers.net.
+.			340399	IN	NS	j.root-servers.net.
+.			340399	IN	NS	f.root-servers.net.
+.			426782	IN	RRSIG	NS 8 0 518400 20241105050000 20241023040000 61050 . v5KrGq9UH9ZXHTFmFmadqcmiff4QiuuK01kv41dXJwM4o0WRo1XUAWzb 8dKAFGI7slTPfQmkLgvjS1/HgX7CIQtUxzVRXmedWGniFEclEYyIs8P7 4exjg6L/x0xqnziG7IST6oEucYdUURNgsUapuXTS5aocirsIyfK3SB1h a8uJ2UnvCUxGkKRSBE8c7HLPxcPZPSfRQRcaDofQXdLlGD6KGEnrZPam 8xteQJF7RLDzf/3zdeOiBseofIQxDtKWac5PCoLG8b2uwC1/FBsqWZV/ 7vV4wYNaoVLN/8stqV7A48ZTPNmTFvHWoslFpK1vciYl+ikQl/dWxmdr zW4Q1Q==
+;; Received 1137 bytes from 163.117.144.129#53(163.117.144.129) in 0 ms
+
+uk.			172800	IN	NS	dns1.nic.uk.
+uk.			172800	IN	NS	dns3.nic.uk.
+uk.			172800	IN	NS	nsc.nic.uk.
+uk.			172800	IN	NS	nsa.nic.uk.
+uk.			172800	IN	NS	nsd.nic.uk.
+uk.			172800	IN	NS	dns2.nic.uk.
+uk.			172800	IN	NS	dns4.nic.uk.
+uk.			172800	IN	NS	nsb.nic.uk.
+uk.			86400	IN	DS	43876 8 2 A107ED2AC1BD14D924173BC7E827A1153582072394F9272BA37E2353 BC659603
+uk.			86400	IN	RRSIG	DS 8 1 86400 20241106050000 20241024040000 61050 . Kzy0aY+W1GOokU/jszfSAJ7JJ890xWXg0n8eBqzayW3m4nFm1XmCeIJb ElVrxsVUv0lr1f7HB6Z7S88PUP9FBwOECbetpRciZ7j7RgOHgoVY0TJ2 IGzIHisZTHSgZarT+erc+4pYPNYQGDbEFeMzKRYfOiCULUcQbLwXwce3 2IksMjy9Yfo/HWM6Rtk6T8or9PSd5awN9sCjgWXZXoXBPRlJLFxoe2a/ 9Ud9fLXt453vDTc6VMOhc/+IOyB23FKod+6oAkJyYtxIsSQgndLlnC0x 1/g1KEj2eFYXIiSwyt0tK050zj1V3NC+svaN5Npuq8YAO3TAuZwB3Hll lyGFXg==
+;; Received 880 bytes from 198.41.0.4#53(a.root-servers.net) in 40 ms
+
+bb.co.uk.		172800	IN	NS	ns1.chesternet.com.
+bb.co.uk.		172800	IN	NS	ns2.chesternet.com.
+g9f1kiihm8m9vhjk7lrvetbqceogjiqp.co.uk.	10800 IN NSEC3 1 1 0 - G9F3NQ74NTIT1D6QSRKCCS86R4T7H1MD NS SOA RRSIG DNSKEY NSEC3PARAM TYPE65534
+g9f1kiihm8m9vhjk7lrvetbqceogjiqp.co.uk.	10800 IN RRSIG NSEC3 8 3 10800 20241127135232 20241023130043 33621 co.uk. iQvyKDrM7ItHkfEqeV3fDMC/J95EmmVqyUmCMwGCL0UVa4FnwaLzePak vB4qgNiVxwuW0rArckds/GtWF3O1qGhXC3L6oJpVRpPdlqzadUuPN1CT 1789Z06LhTlid74RE0+beZRTr5vZOqYYiC3UsW4lYUTfD76XKRSce9xa rYI=
+06ho5drbnftuqkgr0hip5vbg35c8c4ka.co.uk.	10800 IN NSEC3 1 1 0 - 06HR9PU9BAGMP6A174H8NN578VTCDPMC NS DS RRSIG
+06ho5drbnftuqkgr0hip5vbg35c8c4ka.co.uk.	10800 IN RRSIG NSEC3 8 3 10800 20241124131816 20241020122332 33621 co.uk. RPST+Mlc3Kiao21kQNknaWpaiPpV0gKTAWWZztW9fCN0UzUWgHNSYWue uA5UsyptLZ772qh+F1dnpHyoM0bau0nKv2FN5+9zrdFRCynS7XrpVbKv EMeBhzYm+LuHRVPwV+0fL4FNYOES3TrF3jaVSxPyAkofq2XnjumBUJUA HEM=
+;; Received 614 bytes from 213.248.220.1#53(dns3.nic.uk) in 32 ms
+
+www.bb.co.uk.		300	IN	CNAME	bb.co.uk.
+bb.co.uk.		300	IN	A	64.91.253.46
+bb.co.uk.		86400	IN	NS	ns2.chesternet.com.
+bb.co.uk.		86400	IN	NS	ns1.chesternet.com.
+;; Received 181 bytes from 64.91.253.48#53(ns2.chesternet.com) in 108 ms
+

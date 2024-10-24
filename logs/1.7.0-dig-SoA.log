@@ -1,0 +1,337 @@
+[2024-10-24, 17:21:17] dig SoA www.vanguardia.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> SoA www.vanguardia.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 59309
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: b5391c9e15fbb6cd01000000671a65ed7d6c12b5cd91250f (good)
+;; QUESTION SECTION:
+;www.vanguardia.es.		IN	SOA
+
+;; ANSWER SECTION:
+www.vanguardia.es.	82424	IN	CNAME	www.lavanguardia.es.
+www.lavanguardia.es.	6468	IN	CNAME	ggcpvlhttpd.ggcdns.com.
+
+;; AUTHORITY SECTION:
+ggcdns.com.		350	IN	SOA	ns-1077.awsdns-06.org. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 1800
+
+;; Query time: 4 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:21:17 CEST 2024
+;; MSG SIZE  rcvd: 228
+
+[2024-10-24, 17:21:45] dig SoA www.vanguardia.es @ns-1077.awsdns-06.org
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> SoA www.vanguardia.es @ns-1077.awsdns-06.org
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: REFUSED, id: 10178
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+;; WARNING: recursion requested but not available
+
+;; QUESTION SECTION:
+;www.vanguardia.es.		IN	SOA
+
+;; Query time: 68 msec
+;; SERVER: 205.251.196.53#53(ns-1077.awsdns-06.org) (UDP)
+;; WHEN: Thu Oct 24 17:21:45 CEST 2024
+;; MSG SIZE  rcvd: 35
+
+[2024-10-24, 17:21:59] dig NS www.vanguardia.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> NS www.vanguardia.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3084
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 020894b099008de301000000671a66172b9573e9412b0b98 (good)
+;; QUESTION SECTION:
+;www.vanguardia.es.		IN	NS
+
+;; ANSWER SECTION:
+www.vanguardia.es.	82382	IN	CNAME	www.lavanguardia.es.
+www.lavanguardia.es.	6426	IN	CNAME	ggcpvlhttpd.ggcdns.com.
+
+;; AUTHORITY SECTION:
+ggcdns.com.		872	IN	SOA	ns-1077.awsdns-06.org. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 1800
+
+;; Query time: 0 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:21:59 CEST 2024
+;; MSG SIZE  rcvd: 228
+
+[2024-10-24, 17:22:25] dig NS www.vanguardia.es @j.root-servers.net
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> NS www.vanguardia.es @j.root-servers.net
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23064
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 4, ADDITIONAL: 9
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1472
+;; QUESTION SECTION:
+;www.vanguardia.es.		IN	NS
+
+;; AUTHORITY SECTION:
+es.			172800	IN	NS	a.nic.es.
+es.			172800	IN	NS	c.nic.es.
+es.			172800	IN	NS	g.nic.es.
+es.			172800	IN	NS	h.nic.es.
+
+;; ADDITIONAL SECTION:
+a.nic.es.		172800	IN	A	194.69.254.1
+c.nic.es.		172800	IN	A	194.0.34.53
+g.nic.es.		172800	IN	A	204.61.217.1
+h.nic.es.		172800	IN	A	194.0.33.53
+a.nic.es.		172800	IN	AAAA	2001:67c:21cc:2000::64:41
+c.nic.es.		172800	IN	AAAA	2001:678:44::53
+g.nic.es.		172800	IN	AAAA	2001:500:14:7001:ad::1
+h.nic.es.		172800	IN	AAAA	2001:678:40::53
+
+;; Query time: 32 msec
+;; SERVER: 192.58.128.30#53(j.root-servers.net) (UDP)
+;; WHEN: Thu Oct 24 17:22:25 CEST 2024
+;; MSG SIZE  rcvd: 290
+
+[2024-10-24, 17:22:43] dig NS www.vanguardia.es @a.nic.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> NS www.vanguardia.es @a.nic.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 21396
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 3, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: bed426c4031a6cda01000000671a66438e41f20d0bb46a78 (good)
+;; QUESTION SECTION:
+;www.vanguardia.es.		IN	NS
+
+;; AUTHORITY SECTION:
+vanguardia.es.		86400	IN	NS	dns02.grupogodo.com.
+vanguardia.es.		86400	IN	NS	dns01.grupogodo.com.
+vanguardia.es.		86400	IN	NS	dns03.grupogodo.com.
+
+;; Query time: 4 msec
+;; SERVER: 194.69.254.1#53(a.nic.es) (UDP)
+;; WHEN: Thu Oct 24 17:22:43 CEST 2024
+;; MSG SIZE  rcvd: 147
+
+[2024-10-24, 17:22:54] dig NS www.vanguardia.es @dns01.grupogodo.com
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> NS www.vanguardia.es @dns01.grupogodo.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 40140
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: 0d8125690eee15e132369ecb671a664e732895cacac34a88 (good)
+;; QUESTION SECTION:
+;www.vanguardia.es.		IN	NS
+
+;; ANSWER SECTION:
+www.vanguardia.es.	86400	IN	CNAME	www.lavanguardia.es.
+
+;; Query time: 28 msec
+;; SERVER: 88.87.219.254#53(dns01.grupogodo.com) (UDP)
+;; WHEN: Thu Oct 24 17:22:54 CEST 2024
+;; MSG SIZE  rcvd: 105
+
+[2024-10-24, 17:24:12] dig NS www.lavanguardia.es @dns01.grupogodo.com
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> NS www.lavanguardia.es @dns01.grupogodo.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 62321
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: 6fe6da8c0522aeeec7f383a2671a669c8deaf2be8ed7d3d5 (good)
+;; QUESTION SECTION:
+;www.lavanguardia.es.		IN	NS
+
+;; ANSWER SECTION:
+www.lavanguardia.es.	18000	IN	CNAME	ggcpvlhttpd.ggcdns.com.
+
+;; Query time: 64 msec
+;; SERVER: 88.87.219.254#53(dns01.grupogodo.com) (UDP)
+;; WHEN: Thu Oct 24 17:24:12 CEST 2024
+;; MSG SIZE  rcvd: 112
+
+[2024-10-24, 17:24:29] dig A ggcpvlhttpd.ggcdns.com @dns01.grupogodo.com
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A ggcpvlhttpd.ggcdns.com @dns01.grupogodo.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: REFUSED, id: 20194
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: de3adff065cd0888da80159e671a66ad79f24b0b4c3c4b24 (good)
+;; QUESTION SECTION:
+;ggcpvlhttpd.ggcdns.com.		IN	A
+
+;; Query time: 16 msec
+;; SERVER: 88.87.219.254#53(dns01.grupogodo.com) (UDP)
+;; WHEN: Thu Oct 24 17:24:29 CEST 2024
+;; MSG SIZE  rcvd: 79
+
+[2024-10-24, 17:24:37] dig NS ggcpvlhttpd.ggcdns.com @dns01.grupogodo.com
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> NS ggcpvlhttpd.ggcdns.com @dns01.grupogodo.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: REFUSED, id: 58747
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: e46f1f689f5ef3e4c5340634671a66b5469975462d1ae17d (good)
+;; QUESTION SECTION:
+;ggcpvlhttpd.ggcdns.com.		IN	NS
+
+;; Query time: 16 msec
+;; SERVER: 88.87.219.254#53(dns01.grupogodo.com) (UDP)
+;; WHEN: Thu Oct 24 17:24:37 CEST 2024
+;; MSG SIZE  rcvd: 79
+
+[2024-10-24, 17:24:51] dig A www.lavanguardia.es +trace
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.lavanguardia.es +trace
+;; global options: +cmd
+.			341947	IN	NS	k.root-servers.net.
+.			341947	IN	NS	e.root-servers.net.
+.			341947	IN	NS	b.root-servers.net.
+.			341947	IN	NS	a.root-servers.net.
+.			341947	IN	NS	d.root-servers.net.
+.			341947	IN	NS	i.root-servers.net.
+.			341947	IN	NS	m.root-servers.net.
+.			341947	IN	NS	c.root-servers.net.
+.			341947	IN	NS	h.root-servers.net.
+.			341947	IN	NS	g.root-servers.net.
+.			341947	IN	NS	f.root-servers.net.
+.			341947	IN	NS	j.root-servers.net.
+.			341947	IN	NS	l.root-servers.net.
+.			428330	IN	RRSIG	NS 8 0 518400 20241105050000 20241023040000 61050 . v5KrGq9UH9ZXHTFmFmadqcmiff4QiuuK01kv41dXJwM4o0WRo1XUAWzb 8dKAFGI7slTPfQmkLgvjS1/HgX7CIQtUxzVRXmedWGniFEclEYyIs8P7 4exjg6L/x0xqnziG7IST6oEucYdUURNgsUapuXTS5aocirsIyfK3SB1h a8uJ2UnvCUxGkKRSBE8c7HLPxcPZPSfRQRcaDofQXdLlGD6KGEnrZPam 8xteQJF7RLDzf/3zdeOiBseofIQxDtKWac5PCoLG8b2uwC1/FBsqWZV/ 7vV4wYNaoVLN/8stqV7A48ZTPNmTFvHWoslFpK1vciYl+ikQl/dWxmdr zW4Q1Q==
+;; Received 1137 bytes from 163.117.144.129#53(163.117.144.129) in 0 ms
+
+es.			172800	IN	NS	c.nic.es.
+es.			172800	IN	NS	g.nic.es.
+es.			172800	IN	NS	h.nic.es.
+es.			172800	IN	NS	a.nic.es.
+es.			86400	IN	DS	44375 8 2 9D9858AE981AA53DD1143D93844E3D69B0FB73A9B4FE5759DA39E036 E754D402
+es.			86400	IN	RRSIG	DS 8 1 86400 20241106050000 20241024040000 61050 . auSFJ2R647LM0w7CSQG3lRh5aTF/kp5DSWlhzKuzqQkyIaJMEDSw9aLg h4nB7VIA0/QtFfOhw0nqgXVjEnsOQrWJCJ8Egq9vPcDF2t1KNydnDCHK t1sXe4rDoqvM8+wia1nYm4A6kZa3vF12RHzuPPQTa4iC3Azn8xsZKzMk Gat5z2wop1mliIaMraWp0NHXR4TRG2v5H6kR5QeSGOgpVBGX2Ro7FmAF KGlARP5oMQ2MacA8Kai4TosFwK/YI7PVW7YDqWdbijhTilSUBE1MlNhB auSxUuQzZ4Ls+km05MOFlDH7y4OEPU+R2WbWJpUkwFEDecEec8soK+Pl 5m8Jzw==
+;; Received 659 bytes from 2001:500:12::d0d#53(g.root-servers.net) in 40 ms
+
+lavanguardia.es.	86400	IN	NS	dns01.grupogodo.com.
+lavanguardia.es.	86400	IN	NS	dns02.grupogodo.com.
+lavanguardia.es.	86400	IN	NS	dns03.grupogodo.com.
+tfv5svttjaflo8vd840cqj9al2tp2d99.es. 86400 IN NSEC3 1 1 5 8D8E199709D7703D TFV7CDTMVOH27B5JS9O2EFJUOEKQ4UL9 NS SOA RRSIG DNSKEY NSEC3PARAM
+tfv5svttjaflo8vd840cqj9al2tp2d99.es. 86400 IN RRSIG NSEC3 8 2 86400 20241030221159 20241017013817 2331 es. V5YWE2hdhU3azGQRnGzz/hlhp79kI0r1nKvzpLeWJFLXBmEGk4Gn2jFd aMpPGUvaYR2ArT2GAICEKO1Mcc/Lg70zQ6vJxvfHbYLQntWQMmSgV2KZ RPAZiImaDRGB3wvWMNcLTYGbhNLo244h/688JI4gu4OqvWE8qT20y3pK rCh5hBzvMgxc9hjY+hKQb4LEY1SeU5zqJafWJ03NSRSeNRgJDPhzdkcy RbXO7PFyJ76OtvctPsQBV0iDLzrwIttOTkhS4TlolYnmtl7oIreEmooy uH5/xceB8M7Y5eCVAfjqaopGVFigyWuyOC6YEJNtA3SCCOKuLgiKPWg8 JwKF4A==
+jgnja0c2cl08ujm94b6q71u5i7ubg8n8.es. 86400 IN NSEC3 1 1 5 8D8E199709D7703D JGP5A9HJACU3PN2TIP0KIR413I3AKVTJ NS DS RRSIG
+jgnja0c2cl08ujm94b6q71u5i7ubg8n8.es. 86400 IN RRSIG NSEC3 8 2 86400 20241030235425 20241017013817 2331 es. Ro0okP+AW1aZ0kY9T64JcK9IVaM4WcQ4gYu/Ny1ujRVJ0QJcMoLcxM8v fh1M9cEzkWJt6HQBJsenGT7bO83yCWR9OZ/sVcOc8D4/skhGThZbe584 FyXQyo00WSleHJF2ghmK3dCnZu24Ofd7MnF/zYafyCvc1U6hplXMjJPB 1FZZbpG7FO5RLWpZZ1F9Sw18Z/yrI7SJrOI6VnJBAQymOFRHhY5Vn+9J QLNZkH++qEItZEin1yXalWl73OJ0+176tmO/kt5hCA9+i3F2/aWY4Euy ZdoSswk2mepRrNL8MMN7X1o5Ed3HzhoauQmnhUr60jGGHYhPFdzJ+iub 94NDGg==
+;; Received 906 bytes from 204.61.217.1#53(g.nic.es) in 20 ms
+
+www.lavanguardia.es.	18000	IN	CNAME	ggcpvlhttpd.ggcdns.com.
+;; Received 112 bytes from 213.4.81.226#53(dns03.grupogodo.com) in 12 ms
+
+[2024-10-24, 17:25:49] dig A ggcpvlhttpd.ggcdns.com +trace
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A ggcpvlhttpd.ggcdns.com +trace
+;; global options: +cmd
+.			341889	IN	NS	i.root-servers.net.
+.			341889	IN	NS	b.root-servers.net.
+.			341889	IN	NS	m.root-servers.net.
+.			341889	IN	NS	j.root-servers.net.
+.			341889	IN	NS	e.root-servers.net.
+.			341889	IN	NS	d.root-servers.net.
+.			341889	IN	NS	g.root-servers.net.
+.			341889	IN	NS	h.root-servers.net.
+.			341889	IN	NS	f.root-servers.net.
+.			341889	IN	NS	a.root-servers.net.
+.			341889	IN	NS	k.root-servers.net.
+.			341889	IN	NS	l.root-servers.net.
+.			341889	IN	NS	c.root-servers.net.
+.			428272	IN	RRSIG	NS 8 0 518400 20241105050000 20241023040000 61050 . v5KrGq9UH9ZXHTFmFmadqcmiff4QiuuK01kv41dXJwM4o0WRo1XUAWzb 8dKAFGI7slTPfQmkLgvjS1/HgX7CIQtUxzVRXmedWGniFEclEYyIs8P7 4exjg6L/x0xqnziG7IST6oEucYdUURNgsUapuXTS5aocirsIyfK3SB1h a8uJ2UnvCUxGkKRSBE8c7HLPxcPZPSfRQRcaDofQXdLlGD6KGEnrZPam 8xteQJF7RLDzf/3zdeOiBseofIQxDtKWac5PCoLG8b2uwC1/FBsqWZV/ 7vV4wYNaoVLN/8stqV7A48ZTPNmTFvHWoslFpK1vciYl+ikQl/dWxmdr zW4Q1Q==
+;; Received 1137 bytes from 163.117.144.129#53(163.117.144.129) in 0 ms
+
+com.			172800	IN	NS	m.gtld-servers.net.
+com.			172800	IN	NS	c.gtld-servers.net.
+com.			172800	IN	NS	g.gtld-servers.net.
+com.			172800	IN	NS	k.gtld-servers.net.
+com.			172800	IN	NS	i.gtld-servers.net.
+com.			172800	IN	NS	b.gtld-servers.net.
+com.			172800	IN	NS	l.gtld-servers.net.
+com.			172800	IN	NS	e.gtld-servers.net.
+com.			172800	IN	NS	d.gtld-servers.net.
+com.			172800	IN	NS	h.gtld-servers.net.
+com.			172800	IN	NS	f.gtld-servers.net.
+com.			172800	IN	NS	a.gtld-servers.net.
+com.			172800	IN	NS	j.gtld-servers.net.
+com.			86400	IN	DS	19718 13 2 8ACBB0CD28F41250A80A491389424D341522D946B0DA0C0291F2D3D7 71D7805A
+com.			86400	IN	RRSIG	DS 8 1 86400 20241106050000 20241024040000 61050 . BowVYbsLY8ulQJdYlFu303d2ltG41Ej+QHgQnY+VqX4TgjC6AJpPSk7O XiA3/FxA2b4tv9BoKDM7TA1lUH+NkeAid7jQiQrCGySzqUiUwNKbjkd9 5Lg9OHaW4+DZvh+bY7RnBnGtN0l+VgTKS7rBpqQMDbHoXS+X4Saqu1bi PsWMo5siA54GQXW2d5OJSI+MiDU84BZbG9ubPFlKn4wEl4Tjamt10F3g 6vxhhtZkLxwhEfKEHazzjxdoa9tvPZAPR/JKLBuiBRxs36Dxj3V6dFba ZgP1mWd9ByBJ0gSOYeM5wCAlS+BZbdyUL7aKlHAnYR+LkF0ZyxTjPc1C ynO2nw==
+;; Received 1213 bytes from 192.112.36.4#53(g.root-servers.net) in 44 ms
+
+ggcdns.com.		172800	IN	NS	ns-716.awsdns-25.net.
+ggcdns.com.		172800	IN	NS	ns-378.awsdns-47.com.
+ggcdns.com.		172800	IN	NS	ns-1616.awsdns-10.co.uk.
+ggcdns.com.		172800	IN	NS	ns-1077.awsdns-06.org.
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 900 IN NSEC3 1 1 0 - CK0Q3UDG8CEKKAE7RUKPGCT1DVSSH8LL NS SOA RRSIG DNSKEY NSEC3PARAM
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 900 IN RRSIG NSEC3 13 2 900 20241031002605 20241023231605 29942 com. yIW2chFCcBNnjhYJ5/DM1aDaFZJMjhKLohh2T+4V3fNqbXUhDHlcRkzx KLu2tZgHsOKCKnS4E7UcbrQYcJLR1A==
+APC8LIK10SSRF7S013JPJ01HETGD1LB8.com. 900 IN NSEC3 1 1 0 - APC8S92K97SRPS7I9P8I8T584SC5DDH0 NS DS RRSIG
+APC8LIK10SSRF7S013JPJ01HETGD1LB8.com. 900 IN RRSIG NSEC3 13 2 900 20241028021047 20241021010047 29942 com. VlQZcRPsueDLP+dNo6Zc6md3Ap9j8sR+vYCC22kjY90Lh45EYnSprbhC Of78yyXYiO7JPi6P4uYnNMFc6Z7S9Q==
+;; Received 561 bytes from 2001:500:856e::30#53(d.gtld-servers.net) in 32 ms
+
+ggcpvlhttpd.ggcdns.com.	180	IN	A	213.4.81.211
+ggcdns.com.		172800	IN	NS	ns-1077.awsdns-06.org.
+ggcdns.com.		172800	IN	NS	ns-1616.awsdns-10.co.uk.
+ggcdns.com.		172800	IN	NS	ns-378.awsdns-47.com.
+ggcdns.com.		172800	IN	NS	ns-716.awsdns-25.net.
+;; Received 204 bytes from 2600:9000:5302:cc00::1#53(ns-716.awsdns-25.net) in 4 ms
+
+[2024-10-24, 17:26:27] dig A ggcpvlhttpd.ggcdns.com @ns-716.awsdns-25.net
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A ggcpvlhttpd.ggcdns.com @ns-716.awsdns-25.net
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 8536
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 4, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;ggcpvlhttpd.ggcdns.com.		IN	A
+
+;; ANSWER SECTION:
+ggcpvlhttpd.ggcdns.com.	180	IN	A	88.87.219.211
+
+;; AUTHORITY SECTION:
+ggcdns.com.		172800	IN	NS	ns-1077.awsdns-06.org.
+ggcdns.com.		172800	IN	NS	ns-1616.awsdns-10.co.uk.
+ggcdns.com.		172800	IN	NS	ns-378.awsdns-47.com.
+ggcdns.com.		172800	IN	NS	ns-716.awsdns-25.net.
+
+;; Query time: 4 msec
+;; SERVER: 205.251.194.204#53(ns-716.awsdns-25.net) (UDP)
+;; WHEN: Thu Oct 24 17:26:27 CEST 2024
+;; MSG SIZE  rcvd: 204
+

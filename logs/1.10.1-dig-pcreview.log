@@ -1,0 +1,180 @@
+[2024-10-24, 17:40:21] dig A www.pcreview.co.uk +norecurse
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.pcreview.co.uk +norecurse
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 18943
+;; flags: qr ra; QUERY: 1, ANSWER: 2, AUTHORITY: 2, ADDITIONAL: 13
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 9a19cbc442788bef01000000671a6a654a15c5ead9337554 (good)
+;; QUESTION SECTION:
+;www.pcreview.co.uk.		IN	A
+
+;; ANSWER SECTION:
+www.pcreview.co.uk.	153	IN	A	172.67.135.45
+www.pcreview.co.uk.	153	IN	A	104.21.6.187
+
+;; AUTHORITY SECTION:
+pcreview.co.uk.		78713	IN	NS	marjory.ns.cloudflare.com.
+pcreview.co.uk.		78713	IN	NS	cleo.ns.cloudflare.com.
+
+;; ADDITIONAL SECTION:
+cleo.ns.cloudflare.com.	2435	IN	A	108.162.193.89
+cleo.ns.cloudflare.com.	2435	IN	A	172.64.33.89
+cleo.ns.cloudflare.com.	2435	IN	A	173.245.59.89
+marjory.ns.cloudflare.com. 2435	IN	A	108.162.192.193
+marjory.ns.cloudflare.com. 2435	IN	A	172.64.32.193
+marjory.ns.cloudflare.com. 2435	IN	A	173.245.58.193
+cleo.ns.cloudflare.com.	2435	IN	AAAA	2606:4700:58::adf5:3b59
+cleo.ns.cloudflare.com.	2435	IN	AAAA	2803:f800:50::6ca2:c159
+cleo.ns.cloudflare.com.	2435	IN	AAAA	2a06:98c1:50::ac40:2159
+marjory.ns.cloudflare.com. 2435	IN	AAAA	2606:4700:50::adf5:3ac1
+marjory.ns.cloudflare.com. 2435	IN	AAAA	2803:f800:50::6ca2:c0c1
+marjory.ns.cloudflare.com. 2435	IN	AAAA	2a06:98c1:50::ac40:20c1
+
+;; Query time: 0 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:40:21 CEST 2024
+;; MSG SIZE  rcvd: 429
+
+[2024-10-24, 17:40:41] dig A www.pcreview.co.uk @j.root-server.net +norecurse
+[2024-10-24, 17:40:44] dig A www.pcreview.co.uk @j.root-servers.net +norecurse
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.pcreview.co.uk @j.root-servers.net +norecurse
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 21243
+;; flags: qr; QUERY: 1, ANSWER: 0, AUTHORITY: 8, ADDITIONAL: 17
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1472
+;; QUESTION SECTION:
+;www.pcreview.co.uk.		IN	A
+
+;; AUTHORITY SECTION:
+uk.			172800	IN	NS	nsa.nic.uk.
+uk.			172800	IN	NS	nsb.nic.uk.
+uk.			172800	IN	NS	nsc.nic.uk.
+uk.			172800	IN	NS	nsd.nic.uk.
+uk.			172800	IN	NS	dns1.nic.uk.
+uk.			172800	IN	NS	dns2.nic.uk.
+uk.			172800	IN	NS	dns3.nic.uk.
+uk.			172800	IN	NS	dns4.nic.uk.
+
+;; ADDITIONAL SECTION:
+nsa.nic.uk.		172800	IN	A	156.154.100.3
+nsb.nic.uk.		172800	IN	A	156.154.101.3
+nsc.nic.uk.		172800	IN	A	156.154.102.3
+nsd.nic.uk.		172800	IN	A	156.154.103.3
+dns1.nic.uk.		172800	IN	A	213.248.216.1
+dns2.nic.uk.		172800	IN	A	103.49.80.1
+dns3.nic.uk.		172800	IN	A	213.248.220.1
+dns4.nic.uk.		172800	IN	A	43.230.48.1
+nsa.nic.uk.		172800	IN	AAAA	2001:502:ad09::3
+nsb.nic.uk.		172800	IN	AAAA	2001:502:2eda::3
+nsc.nic.uk.		172800	IN	AAAA	2610:a1:1009::3
+nsd.nic.uk.		172800	IN	AAAA	2610:a1:1010::3
+dns1.nic.uk.		172800	IN	AAAA	2a01:618:400::1
+dns2.nic.uk.		172800	IN	AAAA	2401:fd80:400::1
+dns3.nic.uk.		172800	IN	AAAA	2a01:618:404::1
+dns4.nic.uk.		172800	IN	AAAA	2401:fd80:404::1
+
+;; Query time: 36 msec
+;; SERVER: 192.58.128.30#53(j.root-servers.net) (UDP)
+;; WHEN: Thu Oct 24 17:40:44 CEST 2024
+;; MSG SIZE  rcvd: 551
+
+dig: couldn't get address for 'j.root-server.net': not found
+[2024-10-24, 17:42:16] dig A www.pcreview.co.uk @j.root-servers.net +norecurse
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.pcreview.co.uk @j.root-servers.net +norecurse
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 32781
+;; flags: qr; QUERY: 1, ANSWER: 0, AUTHORITY: 8, ADDITIONAL: 17
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1472
+;; QUESTION SECTION:
+;www.pcreview.co.uk.		IN	A
+
+;; AUTHORITY SECTION:
+uk.			172800	IN	NS	nsa.nic.uk.
+uk.			172800	IN	NS	nsb.nic.uk.
+uk.			172800	IN	NS	nsc.nic.uk.
+uk.			172800	IN	NS	nsd.nic.uk.
+uk.			172800	IN	NS	dns1.nic.uk.
+uk.			172800	IN	NS	dns2.nic.uk.
+uk.			172800	IN	NS	dns3.nic.uk.
+uk.			172800	IN	NS	dns4.nic.uk.
+
+;; ADDITIONAL SECTION:
+nsa.nic.uk.		172800	IN	A	156.154.100.3
+nsb.nic.uk.		172800	IN	A	156.154.101.3
+nsc.nic.uk.		172800	IN	A	156.154.102.3
+nsd.nic.uk.		172800	IN	A	156.154.103.3
+dns1.nic.uk.		172800	IN	A	213.248.216.1
+dns2.nic.uk.		172800	IN	A	103.49.80.1
+dns3.nic.uk.		172800	IN	A	213.248.220.1
+dns4.nic.uk.		172800	IN	A	43.230.48.1
+nsa.nic.uk.		172800	IN	AAAA	2001:502:ad09::3
+nsb.nic.uk.		172800	IN	AAAA	2001:502:2eda::3
+nsc.nic.uk.		172800	IN	AAAA	2610:a1:1009::3
+nsd.nic.uk.		172800	IN	AAAA	2610:a1:1010::3
+dns1.nic.uk.		172800	IN	AAAA	2a01:618:400::1
+dns2.nic.uk.		172800	IN	AAAA	2401:fd80:400::1
+dns3.nic.uk.		172800	IN	AAAA	2a01:618:404::1
+dns4.nic.uk.		172800	IN	AAAA	2401:fd80:404::1
+
+;; Query time: 36 msec
+;; SERVER: 192.58.128.30#53(j.root-servers.net) (UDP)
+;; WHEN: Thu Oct 24 17:42:16 CEST 2024
+;; MSG SIZE  rcvd: 551
+
+[2024-10-24, 17:45:08] dig A www.pcreview.co.uk @nsa.nic.uk +norecurse
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.pcreview.co.uk @nsa.nic.uk +norecurse
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 62212
+;; flags: qr; QUERY: 1, ANSWER: 0, AUTHORITY: 2, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: ccc50bbe54889a3101000000671a6b848a8ff5b9c4c4bb88 (good)
+;; QUESTION SECTION:
+;www.pcreview.co.uk.		IN	A
+
+;; AUTHORITY SECTION:
+pcreview.co.uk.		172800	IN	NS	marjory.ns.cloudflare.com.
+pcreview.co.uk.		172800	IN	NS	cleo.ns.cloudflare.com.
+
+;; Query time: 8 msec
+;; SERVER: 156.154.100.3#53(nsa.nic.uk) (UDP)
+;; WHEN: Thu Oct 24 17:45:08 CEST 2024
+;; MSG SIZE  rcvd: 133
+
+[2024-10-24, 17:45:18] dig A www.pcreview.co.uk @cleo.ns.cloudflare.com +norecurse
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.pcreview.co.uk @cleo.ns.cloudflare.com +norecurse
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 2327
+;; flags: qr aa; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;www.pcreview.co.uk.		IN	A
+
+;; ANSWER SECTION:
+www.pcreview.co.uk.	300	IN	A	172.67.135.45
+www.pcreview.co.uk.	300	IN	A	104.21.6.187
+
+;; Query time: 24 msec
+;; SERVER: 172.64.33.89#53(cleo.ns.cloudflare.com) (UDP)
+;; WHEN: Thu Oct 24 17:45:18 CEST 2024
+;; MSG SIZE  rcvd: 79
+

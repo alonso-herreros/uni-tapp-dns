@@ -1,0 +1,31 @@
+[2024-10-24, 17:48:07] dig A www.bb.co.uk @ns2.chesternet.com +norecurse
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.bb.co.uk @ns2.chesternet.com +norecurse
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 17194
+;; flags: qr aa; QUERY: 1, ANSWER: 2, AUTHORITY: 2, ADDITIONAL: 3
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: 4648d7461c405719f5667b9a671a6c3640a755d90cecd306 (good)
+;; QUESTION SECTION:
+;www.bb.co.uk.			IN	A
+
+;; ANSWER SECTION:
+www.bb.co.uk.		300	IN	CNAME	bb.co.uk.
+bb.co.uk.		300	IN	A	64.91.253.46
+
+;; AUTHORITY SECTION:
+bb.co.uk.		86400	IN	NS	ns1.chesternet.com.
+bb.co.uk.		86400	IN	NS	ns2.chesternet.com.
+
+;; ADDITIONAL SECTION:
+ns1.chesternet.com.	14400	IN	A	64.91.253.47
+ns2.chesternet.com.	14400	IN	A	64.91.253.48
+
+;; Query time: 108 msec
+;; SERVER: 64.91.253.48#53(ns2.chesternet.com) (UDP)
+;; WHEN: Thu Oct 24 17:48:07 CEST 2024
+;; MSG SIZE  rcvd: 181
+

@@ -1,0 +1,88 @@
+[2024-10-24, 18:00:03] dig SoA google.jobs
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> SoA google.jobs
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3647
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 51bfbd9981aa31da01000000671a6f034068f795522d0695 (good)
+;; QUESTION SECTION:
+;google.jobs.			IN	SOA
+
+;; ANSWER SECTION:
+google.jobs.		60	IN	SOA	ns1.google.com. dns-admin.google.com. 688940268 900 900 1800 60
+
+;; Query time: 24 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 18:00:03 CEST 2024
+;; MSG SIZE  rcvd: 128
+
+[2024-10-24, 18:00:23] dig SoA primevideo.com
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> SoA primevideo.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 62489
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 5f939a1c8e52975501000000671a6f1723df9a19e94f4eed (good)
+;; QUESTION SECTION:
+;primevideo.com.			IN	SOA
+
+;; ANSWER SECTION:
+primevideo.com.		900	IN	SOA	ns-1933.awsdns-49.co.uk. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 900
+
+;; Query time: 40 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 18:00:23 CEST 2024
+;; MSG SIZE  rcvd: 158
+
+[2024-10-24, 18:00:45] dig SoA inf.uc3m.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> SoA inf.uc3m.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 47861
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: a75edb048b96e7d201000000671a6f2d442b9e757882bbb2 (good)
+;; QUESTION SECTION:
+;inf.uc3m.es.			IN	SOA
+
+;; AUTHORITY SECTION:
+uc3m.es.		8164	IN	SOA	vorteX.uc3m.es. netmaster.uc3m.es. 2024101601 86400 7200 2592000 172800
+
+;; Query time: 4 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 18:00:45 CEST 2024
+;; MSG SIZE  rcvd: 121
+
+[2024-10-24, 18:00:52] dig SoA it.uc3m.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> SoA it.uc3m.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 30521
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: dd7a76a25b29490601000000671a6f34ca0effc5ac207779 (good)
+;; QUESTION SECTION:
+;it.uc3m.es.			IN	SOA
+
+;; ANSWER SECTION:
+it.uc3m.es.		86400	IN	SOA	tamtam.it.uc3m.es. root.tamtam.it.uc3m.es. 2024101600 7200 3400 604800 600
+
+;; Query time: 0 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 18:00:52 CEST 2024
+;; MSG SIZE  rcvd: 115
+

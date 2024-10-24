@@ -1,0 +1,26 @@
+[2024-10-24, 17:17:50] dig MX abc.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> MX abc.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22529
+;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 4af2033260c0c23f01000000671a651e53be37b24f5ed8a2 (good)
+;; QUESTION SECTION:
+;abc.es.				IN	MX
+
+;; ANSWER SECTION:
+abc.es.			236	IN	MX	10 alt3.aspmx.l.google.com.
+abc.es.			236	IN	MX	5 alt2.aspmx.l.google.com.
+abc.es.			236	IN	MX	5 alt1.aspmx.l.google.com.
+abc.es.			236	IN	MX	10 alt4.aspmx.l.google.com.
+abc.es.			236	IN	MX	1 aspmx.l.google.com.
+
+;; Query time: 0 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:17:50 CEST 2024
+;; MSG SIZE  rcvd: 181
+

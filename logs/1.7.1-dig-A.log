@@ -1,0 +1,96 @@
+[2024-10-24, 17:20:30] dig A www.vanguardia.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.vanguardia.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 8461
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 195c55c14d9da50e01000000671a65bea74d590f1cd2e7e4 (good)
+;; QUESTION SECTION:
+;www.vanguardia.es.		IN	A
+
+;; ANSWER SECTION:
+www.vanguardia.es.	82471	IN	CNAME	www.lavanguardia.es.
+www.lavanguardia.es.	6515	IN	CNAME	ggcpvlhttpd.ggcdns.com.
+ggcpvlhttpd.ggcdns.com.	180	IN	A	213.4.81.211
+
+;; Query time: 56 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:20:30 CEST 2024
+;; MSG SIZE  rcvd: 159
+
+[2024-10-24, 17:20:49] dig A www.vanguardia.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.vanguardia.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 64828
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 57e9032937ff6b3301000000671a65d1f7e4a2ec358092b2 (good)
+;; QUESTION SECTION:
+;www.vanguardia.es.		IN	A
+
+;; ANSWER SECTION:
+www.vanguardia.es.	82452	IN	CNAME	www.lavanguardia.es.
+www.lavanguardia.es.	6496	IN	CNAME	ggcpvlhttpd.ggcdns.com.
+ggcpvlhttpd.ggcdns.com.	161	IN	A	213.4.81.211
+
+;; Query time: 0 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:20:49 CEST 2024
+;; MSG SIZE  rcvd: 159
+
+[2024-10-24, 17:20:51] dig A www.vanguardia.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.vanguardia.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 59655
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 6b62679cc8e1d4ea01000000671a65d3db680ffc8c3c4838 (good)
+;; QUESTION SECTION:
+;www.vanguardia.es.		IN	A
+
+;; ANSWER SECTION:
+www.vanguardia.es.	82450	IN	CNAME	www.lavanguardia.es.
+www.lavanguardia.es.	6494	IN	CNAME	ggcpvlhttpd.ggcdns.com.
+ggcpvlhttpd.ggcdns.com.	159	IN	A	213.4.81.211
+
+;; Query time: 0 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:20:51 CEST 2024
+;; MSG SIZE  rcvd: 159
+
+[2024-10-24, 17:20:55] dig A www.vanguardia.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.vanguardia.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 44452
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: e07bd0cb0d5cc41d01000000671a65d7715fb3495e9278f5 (good)
+;; QUESTION SECTION:
+;www.vanguardia.es.		IN	A
+
+;; ANSWER SECTION:
+www.vanguardia.es.	82446	IN	CNAME	www.lavanguardia.es.
+www.lavanguardia.es.	6490	IN	CNAME	ggcpvlhttpd.ggcdns.com.
+ggcpvlhttpd.ggcdns.com.	155	IN	A	213.4.81.211
+
+;; Query time: 4 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:20:55 CEST 2024
+;; MSG SIZE  rcvd: 159
+

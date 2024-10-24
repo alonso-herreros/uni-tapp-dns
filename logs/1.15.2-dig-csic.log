@@ -1,0 +1,77 @@
+[2024-10-24, 18:16:00] dig NS csic.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> NS csic.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 53833
+;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 7
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 5e28c824fae06a1401000000671a72c037d2eac90ac562ff (good)
+;; QUESTION SECTION:
+;csic.es.			IN	NS
+
+;; ANSWER SECTION:
+csic.es.		83556	IN	NS	chico.rediris.es.
+csic.es.		83556	IN	NS	sun.rediris.es.
+csic.es.		83556	IN	NS	olmo.csic.es.
+csic.es.		83556	IN	NS	sabina.cti.csic.es.
+
+;; ADDITIONAL SECTION:
+sun.rediris.es.		19171	IN	A	199.184.182.1
+olmo.csic.es.		83556	IN	A	161.111.10.3
+chico.rediris.es.	19171	IN	A	162.219.54.2
+sabina.cti.csic.es.	83556	IN	A	161.111.80.11
+sun.rediris.es.		19171	IN	AAAA	2620:171:808::1
+chico.rediris.es.	19171	IN	AAAA	2620:10a:80eb::2
+
+;; Query time: 0 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 18:16:00 CEST 2024
+;; MSG SIZE  rcvd: 283
+
+[2024-10-24, 18:17:03] dig SoA csic.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> SoA csic.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 19435
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: e10fffbcd04aedb001000000671a72ffa8d286b3fd20a932 (good)
+;; QUESTION SECTION:
+;csic.es.			IN	SOA
+
+;; ANSWER SECTION:
+csic.es.		83493	IN	SOA	olmo.csic.es. hostmaster.csic.es. 2010763741 86400 7200 2592000 3600
+
+;; Query time: 0 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 18:17:03 CEST 2024
+;; MSG SIZE  rcvd: 116
+
+[2024-10-24, 18:17:27] dig MX csic.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> MX csic.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 5381
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 6212727fbd0d063601000000671a7317d8c0a67cd641a9f3 (good)
+;; QUESTION SECTION:
+;csic.es.			IN	MX
+
+;; ANSWER SECTION:
+csic.es.		68867	IN	MX	10 mx.csic.es.
+
+;; Query time: 4 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 18:17:27 CEST 2024
+;; MSG SIZE  rcvd: 83
+

@@ -1,0 +1,22 @@
+[2024-10-24, 17:19:44] dig A aspmx.l.google.com
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A aspmx.l.google.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 725
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 54d834ad0e2ae6cf01000000671a6590e8964d888da0fb13 (good)
+;; QUESTION SECTION:
+;aspmx.l.google.com.		IN	A
+
+;; ANSWER SECTION:
+aspmx.l.google.com.	293	IN	A	74.125.71.26
+
+;; Query time: 60 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 17:19:44 CEST 2024
+;; MSG SIZE  rcvd: 91
+

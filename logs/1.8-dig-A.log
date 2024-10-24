@@ -1,0 +1,35 @@
+[2024-10-24, 17:29:36] dig A www.vanguardia.es @j.root-servers.net
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> A www.vanguardia.es @j.root-servers.net
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3888
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 4, ADDITIONAL: 9
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1472
+;; QUESTION SECTION:
+;www.vanguardia.es.		IN	A
+
+;; AUTHORITY SECTION:
+es.			172800	IN	NS	a.nic.es.
+es.			172800	IN	NS	c.nic.es.
+es.			172800	IN	NS	g.nic.es.
+es.			172800	IN	NS	h.nic.es.
+
+;; ADDITIONAL SECTION:
+a.nic.es.		172800	IN	A	194.69.254.1
+c.nic.es.		172800	IN	A	194.0.34.53
+g.nic.es.		172800	IN	A	204.61.217.1
+h.nic.es.		172800	IN	A	194.0.33.53
+a.nic.es.		172800	IN	AAAA	2001:67c:21cc:2000::64:41
+c.nic.es.		172800	IN	AAAA	2001:678:44::53
+g.nic.es.		172800	IN	AAAA	2001:500:14:7001:ad::1
+h.nic.es.		172800	IN	AAAA	2001:678:40::53
+
+;; Query time: 36 msec
+;; SERVER: 192.58.128.30#53(j.root-servers.net) (UDP)
+;; WHEN: Thu Oct 24 17:29:36 CEST 2024
+;; MSG SIZE  rcvd: 290
+
