@@ -233,7 +233,18 @@ The copy, expiration and TTL times can also be found in the SoA record
 
 ## Part 2
 
+A symlink to the `named` executable in `/usr/dist/sbin` was created in
+`$HOME/.local/bin` for easier access.
+
+> **WARNING**
+>
+> The `named.conf` file was modified to be a template. The `named_wrapper`
+> script was created to accept this template and turn it into a valid config
+> file by doing environment variable substitution.
+
 ### 2.1. Start a `named` and check that it's running with dig
+
+
 
 ### 2.2. Modify `named` config to also server inverse resolution
 

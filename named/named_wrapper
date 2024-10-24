@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+[[ -z NAMED_DIR ]] && export NAMED_DIR=$HOME/rroo/named
+
+if [[ "$1" = "--template" ]]; then
+    shift;
+    [[ -z "$1" ]] && echo "Provide a template" && exit
+
+    PROCESSED_FILE="$1.processed"
+    envsubst < "$1" > "$PROCESSED_FILE"
+    shift;
+fi
+
+
+/usr/dist/sbin/named -c "$PROCESSED_FILE" ${@:1}
+
+rm "$PROCESSED_FILE"
+
