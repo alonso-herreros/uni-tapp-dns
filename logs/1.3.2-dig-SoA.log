@@ -1,0 +1,22 @@
+[2024-10-24, 13:01:06] dig SoA abc.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> SoA abc.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 318
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 53d2eefcf186c5e201000000671a28f24fdbabd68708bd37 (good)
+;; QUESTION SECTION:
+;abc.es.				IN	SOA
+
+;; ANSWER SECTION:
+abc.es.			300	IN	SOA	a1-229.akam.net. dnsadmin.abc.es. 2019023109 86400 7200 2592000 300
+
+;; Query time: 24 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 13:01:06 CEST 2024
+;; MSG SIZE  rcvd: 123
+

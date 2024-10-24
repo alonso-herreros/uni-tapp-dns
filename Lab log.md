@@ -8,95 +8,80 @@
 
 ## Part 1: queries with a DNS client
 
-### Question 1.1
+### 1.1. Determine the IP address of the machine `www.mec.es`.
 
-Determine the IP address of the machine `www.mec.es`.
+Its IPv4 address is `212.128.114.29`
 
-### Question 1.2
+### 1.2. Check which machine has the IP address `193.110.128.199`.
 
-Check which machine has the IP address `193.110.128.199`.
+That IP is associated with `www.elmundo.es`
 
-### Question 1.3
+### 1.3. Get the name and address of `abc.es` DNS servers (primary & secondary)
 
-Find out the name and IP address of the DNS servers of the domain `abc.es` and
-say which of them is primary and which is secondary.
+These are the name servers available:
 
-### Question 1.4
+```text
+abc.es.			19977	IN	NS	a4-67.akam.net.
+abc.es.			19977	IN	NS	a1-229.akam.net.
+abc.es.			19977	IN	NS	a5-64.akam.net.
+abc.es.			19977	IN	NS	a11-64.akam.net.
+abc.es.			19977	IN	NS	a18-65.akam.net.
+abc.es.			19977	IN	NS	a24-66.akam.net.
+```
 
-Obtain the SOA registry of the domain `abc.es,` first, by asking the local DNS
-and, second, by asking the primary server of the `abc.es` domain. Verify that
-in one case, the response is authoritative and in the other, it isn't.
+Luckily for us, their addresses were included in the additional section:
 
-### Question 1.5
+```text
+a4-67.akam.net.		11617	IN	A	72.246.46.67
+a5-64.akam.net.		11617	IN	A	95.100.168.64
+a1-229.akam.net.	85836	IN	A	193.108.91.229
+a11-64.akam.net.	11616	IN	A	84.53.139.64
+a18-65.akam.net.	11617	IN	A	95.101.36.65
+a24-66.akam.net.	11617	IN	A	2.16.130.66
+a4-67.akam.net.		11617	IN	AAAA	2600:1480:9000::43
+a5-64.akam.net.		11617	IN	AAAA	2600:1480:b000::40
+a1-229.akam.net.	19791	IN	AAAA	2600:1401:2::e5
+a11-64.akam.net.	11616	IN	AAAA	2600:1480:1::40
+a18-65.akam.net.	11617	IN	AAAA	2600:1480:4800::41
+a24-66.akam.net.	11617	IN	AAAA	2600:1480:9800::42
+```
 
-If you had a problem with the DNS of `abc.es` and you had to send an e-mail to
-its administrator, to what address would you send it?
+As stated in the `SoA` record, the primary server is `a1-229.akam.net`
 
-### Question 1.6
+### 1.4. Get SoA of `abc.es` by asking the local DNS and their primary server
 
-Determine the name and IP address of the mail server of the administrator
-referred to in the previous question
+As expected, the 
 
-### Question 1.7
+### 1.5. What is the email of the `abc.es` DNS admin?
 
-How long will the IP address of `www.vanguardia.es` remain in the cache of your
-local DNS? Ask your local DNS for this address several times in succession.
-What do you observe in the TTL of the resource registry?
+### 1.6. Find the name and IP address of the admin's mail server
 
-### Question 1.8
+### 1.7. `www.vanguardia.es`'s TTL in local DNS
 
-Now ask the same to a root server (for example, `J.ROOT-SERVERS.NET` with IP
-address `192.58.128.30`) and check in the reply packet that this server does
-not accept the recursive mode.
+### 1.8. Ask `j.root-servers.net` the same thing
 
-### Question 1.9
+### 1.9. Find how many computers are doing load balancing in `www.elpais.es`
 
-Find out how many computers are carrying out load balancing in the web server
-`www.elpais.es.` Do you always get the same ones in the same order?
+### 1.10. Find `www.pcreview.co.uk` and `www.bb.co.uk`'s addresses iteratively
 
-### Question 1.10
+### 1.11. Do the same using the `+trace` option
 
-By making iterative queries, check the IP address of `www.pcreview.co.uk.`
-What are the steps you have taken?
+### 1.12. Use DNS to check which machines act as `gmail.com`'s mail servers
 
-Following the same steps (iterative queries), do you obtain the IP address of
-`www.bbc.co.uk`?
+### 1.13. How would you get all RRs in `lab.it.uc3m.es`?
 
-### Question 1.11
+### 1.14. Find which are a zone
 
-The same can be done with the `+trace` option of dig. Check the result of
-doing so.
+* `google.jobs`
+* `primevideo.com`
+* `inf.uc3m.es`
+* `it.uc3m.es`
 
-### Question 1.12
-
-Using the information available via DNS determine the computer or computers
-(name and IP address) that act as mail servers for the domain `gmail.com`.
-
-### Question 1.13
-
-What would you need to do to obtain all the resource registries of the the zone
-`lab.it.uc3m.es`?
-
-### Question 1.14
-
-Find out which of the following domain names are a zone: `google.jobs`,
-`primevideo.com`, `inf.uc3m.es`, `it.uc3m.es`.
-
-### Question 1.15
-
-Identify the DNS servers, mail servers, the domain administrator's address, and
-identify the secondary-primary copy times, expiration time, as well as the
-minimum TTL for the domains `it.uc3m.es` and `csic.es`.
+### 1.15. Get lots of data from `it.uc3m.es` and `csic.es`
 
 ## Part 2
 
-### Question 2.1
+### 2.1. Start a `named` and check that it's running with dig
 
-Start a `named` on your computer and use the dig tool to check that it is
-working properly. Use the following to retrieve all the files:
-
-### Question 2.2
-
-Stop the named server and modify the configuration files so that it also serves
-the domain necessary for inverse resolution.
+### 2.2. Modify `named` config to also server inverse resolution
 

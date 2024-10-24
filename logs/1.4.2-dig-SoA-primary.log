@@ -1,0 +1,30 @@
+[2024-10-24, 13:12:14] dig SoA abc.es @a1-229.akam.net
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> SoA abc.es @a1-229.akam.net
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 34851
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 6, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;abc.es.				IN	SOA
+
+;; ANSWER SECTION:
+abc.es.			300	IN	SOA	a1-229.akam.net. dnsadmin.abc.es. 2019023109 86400 7200 2592000 300
+
+;; AUTHORITY SECTION:
+abc.es.			20154	IN	NS	a11-64.akam.net.
+abc.es.			20154	IN	NS	a4-67.akam.net.
+abc.es.			20154	IN	NS	a1-229.akam.net.
+abc.es.			20154	IN	NS	a5-64.akam.net.
+abc.es.			20154	IN	NS	a24-66.akam.net.
+abc.es.			20154	IN	NS	a18-65.akam.net.
+
+;; Query time: 24 msec
+;; SERVER: 193.108.91.229#53(a1-229.akam.net) (UDP)
+;; WHEN: Thu Oct 24 13:12:14 CEST 2024
+;; MSG SIZE  rcvd: 212
+

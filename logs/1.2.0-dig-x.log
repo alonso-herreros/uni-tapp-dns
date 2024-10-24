@@ -1,0 +1,22 @@
+[2024-10-24, 12:46:34] dig -x 193.110.128.119
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> -x 193.110.128.119
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 28850
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 8beffe457c6a3da801000000671a258cb04199bd13ab0135 (good)
+;; QUESTION SECTION:
+;119.128.110.193.in-addr.arpa.	IN	PTR
+
+;; AUTHORITY SECTION:
+128.110.193.in-addr.arpa. 10800	IN	SOA	ns.elmundo.es. dnsmaster.el-mundo.net. 2014062300 7200 3600 2419200 86400
+
+;; Query time: 1600 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 12:46:36 CEST 2024
+;; MSG SIZE  rcvd: 156
+

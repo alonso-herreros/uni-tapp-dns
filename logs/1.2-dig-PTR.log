@@ -1,0 +1,22 @@
+[2024-10-24, 12:49:04] dig PTR 199.128.110.193.in-addr.arpa
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> PTR 199.128.110.193.in-addr.arpa
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3872
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 5dea17827ea4167101000000671a262395103a1815afa98e (good)
+;; QUESTION SECTION:
+;199.128.110.193.in-addr.arpa.	IN	PTR
+
+;; ANSWER SECTION:
+199.128.110.193.in-addr.arpa. 86400 IN	PTR	www.elmundo.es.
+
+;; Query time: 2408 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 12:49:07 CEST 2024
+;; MSG SIZE  rcvd: 113
+

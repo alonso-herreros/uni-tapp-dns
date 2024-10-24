@@ -1,0 +1,41 @@
+[2024-10-24, 13:01:40] dig NS abc.es
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> NS abc.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 10412
+;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 13
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 50f2589dac0ed0af01000000671a29146df3f999fa25a3c1 (good)
+;; QUESTION SECTION:
+;abc.es.				IN	NS
+
+;; ANSWER SECTION:
+abc.es.			19977	IN	NS	a4-67.akam.net.
+abc.es.			19977	IN	NS	a1-229.akam.net.
+abc.es.			19977	IN	NS	a5-64.akam.net.
+abc.es.			19977	IN	NS	a11-64.akam.net.
+abc.es.			19977	IN	NS	a18-65.akam.net.
+abc.es.			19977	IN	NS	a24-66.akam.net.
+
+;; ADDITIONAL SECTION:
+a4-67.akam.net.		11617	IN	A	72.246.46.67
+a5-64.akam.net.		11617	IN	A	95.100.168.64
+a1-229.akam.net.	85836	IN	A	193.108.91.229
+a11-64.akam.net.	11616	IN	A	84.53.139.64
+a18-65.akam.net.	11617	IN	A	95.101.36.65
+a24-66.akam.net.	11617	IN	A	2.16.130.66
+a4-67.akam.net.		11617	IN	AAAA	2600:1480:9000::43
+a5-64.akam.net.		11617	IN	AAAA	2600:1480:b000::40
+a1-229.akam.net.	19791	IN	AAAA	2600:1401:2::e5
+a11-64.akam.net.	11616	IN	AAAA	2600:1480:1::40
+a18-65.akam.net.	11617	IN	AAAA	2600:1480:4800::41
+a24-66.akam.net.	11617	IN	AAAA	2600:1480:9800::42
+
+;; Query time: 4 msec
+;; SERVER: 163.117.144.129#53(163.117.144.129) (UDP)
+;; WHEN: Thu Oct 24 13:01:40 CEST 2024
+;; MSG SIZE  rcvd: 459
+
