@@ -97,7 +97,7 @@ willing to do the recursion for us
 
 By doing `dig A` for the requested name, we get that there are 2 IPs associated
 with `www.elpais.es` (or, technically, a very long canonical name). They are
-the same ones in the tests done, but the order is sometimes changed. 
+the same ones in the tests done, but the order is sometimes changed.
 
 ### 1.10. Find `www.pcreview.co.uk` and `www.bb.co.uk`'s addresses iteratively
 
@@ -238,9 +238,16 @@ A symlink to the `named` executable in `/usr/dist/sbin` was created in
 
 > **WARNING**
 >
-> The `named.conf` file was modified to be a template. The `named_wrapper`
-> script was created to accept this template and turn it into a valid config
-> file by doing environment variable substitution.
+> The `named.conf` file was modified to be a template, where the variable
+> `NAMED_DIR` holds the absolute path to the `named` folder in this repo. From
+> root, run `export NAMED_DIR=$PWD/named` to give the variable its value.
+>
+> The `named_wrapper` script was created to accept this template and turn it
+> into a valid config file by doing environment variable substitution.
+>
+> This wrapper accepts an option `--template <file>` which transforms the given
+> file using `envsubst` and then passes it to `named` along with any other
+> arguments received.
 
 ### 2.1. Start a `named` and check that it's running with dig
 
@@ -275,5 +282,61 @@ $TTL 86400
 2       PTR     mail.midominio.privado.
 ```
 
-Essentially, everything worked fine.
+Essentially, everything worked as expected:
+
+```text
+[2024-10-24, 19:18:34] dig -p 10053 PTR 1.123.168.192.in-addr.arpa @localhost
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> -p 10053 PTR 1.123.168.192.in-addr.arpa @localhost
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 29991
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 2
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;1.123.168.192.in-addr.arpa.	IN	PTR
+
+;; ANSWER SECTION:
+1.123.168.192.in-addr.arpa. 86400 IN	PTR	ns.midominio.privado.
+
+;; AUTHORITY SECTION:
+123.168.192.in-addr.arpa. 86400	IN	NS	ns.midominio.privado.
+
+;; ADDITIONAL SECTION:
+ns.midominio.privado.	86400	IN	A	192.168.123.1
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.1#10053(localhost) (UDP)
+;; WHEN: Thu Oct 24 19:18:34 CEST 2024
+;; MSG SIZE  rcvd: 119
+
+[2024-10-24, 19:18:42] dig -p 10053 PTR 2.123.168.192.in-addr.arpa @localhost
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> -p 10053 PTR 2.123.168.192.in-addr.arpa @localhost
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 14998
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 2
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;2.123.168.192.in-addr.arpa.	IN	PTR
+
+;; ANSWER SECTION:
+2.123.168.192.in-addr.arpa. 86400 IN	PTR	mail.midominio.privado.
+
+;; AUTHORITY SECTION:
+123.168.192.in-addr.arpa. 86400	IN	NS	ns.midominio.privado.
+
+;; ADDITIONAL SECTION:
+ns.midominio.privado.	86400	IN	A	192.168.123.1
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.1#10053(localhost) (UDP)
+;; WHEN: Thu Oct 24 19:18:42 CEST 2024
+;; MSG SIZE  rcvd: 124
+```
 

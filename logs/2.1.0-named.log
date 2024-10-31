@@ -1,0 +1,2 @@
+[2024-10-31, 17:42:33] ./named_wrapper --template named.conf -f
+ERROR: ld.so: object '/usr/libexec/coreutils/libstdbuf.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS64): ignored.
