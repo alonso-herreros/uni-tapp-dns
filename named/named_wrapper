@@ -5,14 +5,18 @@
 if [[ "$1" = "--template" ]]; then
     shift;
     [[ -z "$1" ]] && echo "Provide a template" && exit
+    echo "Processing template"
 
     PROCESSED_FILE="$1.processed"
     envsubst < "$1" > "$PROCESSED_FILE"
     shift;
 fi
 
+echo "Running named"
 
 /usr/dist/sbin/named -c "$PROCESSED_FILE" ${@:1}
 
-rm "$PROCESSED_FILE"
+echo "Exited with code $?"
+
+[[ -n "$PROCESSED_FILE" ]] && rm "$PROCESSED_FILE"
 

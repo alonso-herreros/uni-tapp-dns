@@ -240,7 +240,8 @@ A symlink to the `named` executable in `/usr/dist/sbin` was created in
 >
 > The `named.conf` file was modified to be a template, where the variable
 > `NAMED_DIR` holds the absolute path to the `named` folder in this repo. From
-> root, run `export NAMED_DIR=$PWD/named` to give the variable its value.
+> this repo's root, run `export NAMED_DIR=$PWD/named` to give the variable its
+> value.
 >
 > The `named_wrapper` script was created to accept this template and turn it
 > into a valid config file by doing environment variable substitution.
@@ -252,6 +253,13 @@ A symlink to the `named` executable in `/usr/dist/sbin` was created in
 ### 2.1. Start a `named` and check that it's running with dig
 
 With the changes mentioned above, it all worked
+
+> **NOTE**
+>
+> If despite all attempts to start `named`, and after checking the config files
+> are correct it still won't start, check for the existence of the `named.pid`
+> file. The existence of this file in the directory specified in `named.conf`
+> will prevent a new `named` from starting.
 
 ### 2.2. Modify `named` config to also server inverse resolution
 
