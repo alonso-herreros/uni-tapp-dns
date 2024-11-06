@@ -1,0 +1,24 @@
+[2024-11-06, 23:51:49] dig -p 10053 A ns.midominio.privado @localhost
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> -p 10053 A ns.midominio.privado @localhost
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 45836
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;ns.midominio.privado.		IN	A
+
+;; ANSWER SECTION:
+ns.midominio.privado.	86400	IN	A	192.168.122.1
+
+;; AUTHORITY SECTION:
+midominio.privado.	86400	IN	NS	ns.midominio.privado.
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.1#10053(localhost) (UDP)
+;; WHEN: Wed Nov 06 23:51:49 CET 2024
+;; MSG SIZE  rcvd: 79
+

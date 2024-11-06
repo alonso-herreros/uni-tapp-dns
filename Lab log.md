@@ -252,7 +252,39 @@ A symlink to the `named` executable in `/usr/dist/sbin` was created in
 
 ### 2.1. Start a `named` and check that it's running with dig
 
-With the changes mentioned above, it all worked
+With the changes mentioned above, it all worked. The outputs of running `dig`
+for `A` records of `ns.midominio.privado` and `mail.midominio.privado` can be
+found in the logs, as well as the result of running `dig` for the `SoA` record
+for `midominio.privado` (shown below)
+
+```text
+[2024-11-06, 23:52:21] dig -p 10053 SoA midominio.privado @localhost
+
+; <<>> DiG 9.18.16-1~deb12u1-Debian <<>> -p 10053 SoA midominio.privado @localhost
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23811
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 2
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;midominio.privado.		IN	SOA
+
+;; ANSWER SECTION:
+midominio.privado.	86400	IN	SOA	ns.midominio.privado. mail.midominio.privado. 200403031 28800 7200 604800 86400
+
+;; AUTHORITY SECTION:
+midominio.privado.	86400	IN	NS	ns.midominio.privado.
+
+;; ADDITIONAL SECTION:
+ns.midominio.privado.	86400	IN	A	192.168.122.1
+
+;; Query time: 4 msec
+;; SERVER: 127.0.0.1#10053(localhost) (UDP)
+;; WHEN: Wed Nov 06 23:52:21 CET 2024
+;; MSG SIZE  rcvd: 120
+```
 
 > **NOTE**
 >
